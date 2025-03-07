@@ -1,6 +1,6 @@
 'use strict';
 
-import { ping } from "@kontext21/k21";
+import { ping, checkScreenCapture } from "@kontext21/k21";
 
 export async function performK21Ping() {
     try {
@@ -12,9 +12,16 @@ export async function performK21Ping() {
     }
 }
 
-function main() {
+async function performScreenCapture() {
+    const result = await checkScreenCapture();
+    return result;
+}
+
+async function main() {
     console.log('Pinging Kontext21...');
     performK21Ping();
+    
+    performScreenCapture();
 }
   
 main();
