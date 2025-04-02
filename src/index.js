@@ -1,20 +1,25 @@
 'use strict';
 
-import { ping } from "@kontext21/k21";
+const { basicExample } = require('./examples/basic-example');
+const { customCapturerExample } = require('./examples/custom-capturer-example');
+const { customProcessorExample } = require('./examples/custom-processor-example');
+const { visionExample } = require('./examples/vision-example');
 
-export async function performK21Ping() {
+async function main() {
+    console.log('Running K21 SDK Examples...\n');
+    
     try {
-        const result = ping();
-        return result;
+        console.log('1. Running Basic Example:');
+        await basicExample();
+        console.log('\n2. Running Custom Capturer Example:');
+        await customCapturerExample();
+        console.log('\n3. Running Custom Processor Example:');
+        await customProcessorExample();
+        // console.log('\n4. Running Vision Example:'); // provide API key to run this example
+        // await visionExample(); 
     } catch (error) {
-        console.error("Error in pinging Kontext21:", error);
-        return "Error occurred during ping";
+        console.error('Error running examples:', error);
     }
 }
 
-function main() {
-    console.log('Pinging Kontext21...');
-    performK21Ping();
-}
-  
 main();

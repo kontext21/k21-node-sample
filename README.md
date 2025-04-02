@@ -1,12 +1,21 @@
-# Kontext21 SDK Node.js Sample Project
+# K21 Node.js Sample Project
 
-Barebones sample using Kontext21 SDK from Node.js project
+This is a sample project demonstrating the usage of the Kontext21 SDK in a Node.js environment. For detailed documentation, examples, and API reference, please visit our [official documentation](https://github.com/kontext21/k21-node).
 
-[Docs](https://docs.kontext21.com)
+## Getting Started
 
-##Usage
-
-1. Clone the repository or click "Use this template" button above to create your own repository. 
+1. Clone the repository `git clone https://github.com/kontext21/k21-node-sample.git && cd k21-node-sample`
 2. Install dependencies with `npm install`
-3. Run the project with `npm run dev`
+3. Run the examples with `npm start`
+
+## Examples
+
+This project includes several examples showcasing different features of the K21 SDK:
+
+- Basic Example: Simple SDK integration
+- Custom Capturer Example: Configuring custom capture settings
+- Custom Processor Example: Setting up custom processing options
+- Vision Example: Implementing vision processing capabilities
+
+For more detailed examples and advanced use cases, please refer to our [official documentation](https://github.com/kontext21/k21-node).
 
