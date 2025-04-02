@@ -12,6 +12,6 @@
   "license": "MIT",
   "description": "Barebones sample using Kontext21 SDK from Node.js project",
   "dependencies": {
-    "@kontext21/k21": "file:../kontext21/k21-node/kontext21-k21-0.17.0.tgz"
+    "@kontext21/k21": "^0.17.6"
   }
 }
