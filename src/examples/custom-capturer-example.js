@@ -11,7 +11,7 @@ async function customCapturerExample() {
         duration: 10,
         saveVideoTo: './',
         saveScreenshotTo: './',
-        videoChunkDuration: 5,
+        videoChunkDurationInSeconds: 5,
     });
     
     k21.setProcessor();
