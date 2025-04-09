@@ -18,10 +18,10 @@ async function main() {
         await customProcessorExample();
         // console.log('\n4. Running Vision Example:'); // provide API key to run this example
         // await visionExample(); 
-        console.log('\n5. Running Capture From File Example:');
-        await captureFromFilePathMp4Example();
-        console.log('\n6. Running Capture From File PNG Example:');
-        await captureFromFilePathPngExample();
+        // console.log('\n5. Running Capture From File Example:');
+        // await captureFromFilePathMp4Example();
+        // console.log('\n6. Running Capture From File PNG Example:');
+        // await captureFromFilePathPngExample();
     } catch (error) {
         console.error('Error running examples:', error);
     }

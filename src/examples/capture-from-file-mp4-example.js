@@ -5,7 +5,7 @@ const { K21 } = require('@kontext21/k21');
 async function captureFromFilePathMp4Example() {
     const k21 = new K21();
 
-    k21.setCapturer({
+    k21.setCapturerFromFile({
         file: './resources/output.mp4',
     });
     

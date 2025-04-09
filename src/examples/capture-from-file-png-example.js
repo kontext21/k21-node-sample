@@ -5,7 +5,7 @@ const { K21 } = require('@kontext21/k21');
 async function captureFromFilePathPngExample() {
     const k21 = new K21();
 
-    k21.setCapturer({
+    k21.setCapturerFromFile({
         file: './resources/screenshot-2.png',
     });
     
